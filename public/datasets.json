@@ -1,0 +1,19 @@
+{
+  "default": "jobs",
+  "datasets": [
+    {
+      "id": "jobs",
+      "label": "Job Postings",
+      "url": "/data/jobs.db",
+      "version": "2023-1",
+      "starter": "SELECT *\nFROM job_postings_fact\nLIMIT 100;"
+    },
+    {
+      "id": "invoices",
+      "label": "Invoices",
+      "url": "/data/invoices.db",
+      "version": "2023-1",
+      "starter": "SELECT *\nFROM invoices_fact\nLIMIT 100;"
+    }
+  ]
+}
